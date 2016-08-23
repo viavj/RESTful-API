@@ -1,0 +1,40 @@
+
+
+ul{
+    text-decoration: none;
+}
+
+li{
+    padding: 20px;
+    background-color: coral;
+    width: 400px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+body{
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+
+h2{
+    margin-top: 100px;
+}
+ul li .edit{
+    display: none;
+}
+
+ul li.edit .edit{
+    display: initial;
+}
+
+ul li.edit .noedit{
+    display: none;
+}
+
+
+
+
+
+
+

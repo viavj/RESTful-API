@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Terminal</h2>
+<ul id="trips"></ul>
+
+<template id="trip-template">
+    <li data-id="{{id}}">
+        <p>
+            <strong>name:</strong>
+            <span class="noedit name">{{name}}</span>
+            <input class="edit name"/>
+        </p>
+        <p>
+            <strong>destination:</strong>
+            <span class="noedit trip">{{trip}}</span>
+            <input class="edit trip"/>
+        </p>
+        <button data-id="{{id}}" class="remove">del</button>
+        <button class="editTrip noedit">Edit</button>
+        <button class="saveTrip edit">Save</button>
+        <button class="cancelEdit edit">Cancel</button>
+    </li>
+</template>
+
+<h4>add a trip</h4>
+<p>name: <input type="text" id="name"></p>
+<p>destination: <input type="text" id="trip"></p>
+<button id="add-trip">Add!</button>
+
+<script src="jquery.min.js"></script>
+<script src="main.js"></script>
+<script src="mustache.js"></script>
+</body>
+</html>
